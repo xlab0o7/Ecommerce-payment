@@ -14,9 +14,9 @@
 
 :root {
     --main-color: red;
-    --text-color: rgb(2, 68, 2);
+    --text-color: rgba(255, 255, 5, 0.51);
     --bg-color: white;
-    --container-color: rgb(5, 15, 22);
+    --container-color: rgba(0, 6, 4, 0.644);
 }
 
 img {

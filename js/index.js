@@ -72,7 +72,6 @@ function addProductToCart(title, price, productImg) {
                 <div class="cart-price">${price}</div>
                 <input type="number" name="" id="" value="1" class="cart-quantity"/>
             </div> 
-            <!-- removal of items -->
         <i class='bx bxs-trash cart-remove' ></i> `;
     cartShopBox.innerHTML = cartBoxContent;
     cartItems.append(cartShopBox);
@@ -105,19 +104,18 @@ function quantityChanged(event) {
 // Update Total
 function updateTotal() {
     var cartContent = document.getElementsByClassName("cart-content")[0];
-    var cartBoxes = cartContent.getElementsByClassName('cart-box');
-    let total = 0;
-    for (var i = 0; i < cartBoxes.length; i++) {
-        var cartBox = cartBoxes[i];
-        var priceElement = cartBox.getElementsByClassName('cart-price')[0];
-        console.log(priceElement);
-        var quantityElement = cartBox.getElementsByClassName('cart-quantity')[0];
-        var price = parseFloat(priceElement.innerText.replace('$', ''));
+    var cartBoxes = cartContent.getElementsByClassName("cart-box");
+    var total = 0;
+    for (let i = 0; i < cartBoxes.length; i++) {
+        let cartBox = cartBoxes[i];
+        var priceElement = cartBox.getElementsByClassName("cart-price");
+        var quantityElement = cartBox.getElementsByClassName("cart-quantity");
+        var price = parseFloat(priceElement.innerText);
         var quantity = quantityElement.value;
         total += price * quantity;
     }
     total = Math.round(total * 100) / 100;
-    document.getElementsByClassName('total-price')[0].innerText = '$' + total;
+    document.getElementsByClassName('total-price').innerHTML = "$" + total;
     // saving items
 
     // localStorage.setItem('cartTotal', total);
