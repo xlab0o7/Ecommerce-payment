@@ -14,8 +14,8 @@
 
 :root {
     --main-color: red;
-    --text-color: rgba(255, 255, 5, 0.51);
-    --bg-color: rgb(138, 115, 115);
+    --text-color: rgba(255, 109, 5, 0.237);
+    --bg-color: rgb(255, 255, 255);
     --container-color: rgba(0, 6, 4, 0.644);
 }
 
@@ -272,7 +272,7 @@ section {
 
 .price {
     font-weight: 500;
-    color: var(--text-color);
+    /* color: var(--text-color); */
 }
 
 .add-cart {
