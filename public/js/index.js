@@ -192,3 +192,11 @@ function updateCartIcon() {
     var cartIcon = document.querySelector('#cart-icon');
     cartIcon.setAttribute('data-quantity', quantity);
 }
+
+// Clear cart after successfully payment
+function clearCart() {
+    var cartContent = document.getElementsByClassName("cart-content")[0];
+    cartContent.innerHTML = "";
+    updateTotal();
+    localStorage.removeItem("cartItems");
+}

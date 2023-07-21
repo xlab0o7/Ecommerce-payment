@@ -42,7 +42,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 12px 0;
 }
 
 .container {
@@ -153,12 +153,17 @@ header {
     cursor: pointer;
 }
 
+.cart-content {
+    overflow-x: initial;
+}
+
 .cart-box {
     display: grid;
     grid-template-columns: 32% 50% 18%;
     align-items: center;
     gap: 1rem;
     margin-top: 1rem;
+
 }
 
 .cart-img {
@@ -175,8 +180,8 @@ header {
 }
 
 .cart-product-title {
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 0.8rem;
+    font-weight: 450;
     text-transform: uppercase;
 }
 
@@ -317,7 +322,8 @@ section {
 
 @media (max-width:1080px) {
     .nav {
-        padding: 14px 0;
+        padding: 12px 0;
+        /* height: 12px; */
     }
 
     section {
@@ -346,6 +352,15 @@ section {
 
     .cart {
         width: 320px;
+    }
+
+    .sc-container h1 {
+        font-size: 1.1rem;
+    }
+
+    .sc-container p {
+        width: 90%;
+        font-size: 0.9rem;
     }
 }
 
