@@ -6,21 +6,21 @@ let closeCart = document.querySelector('#close-cart');
 //Open cart
 cartIcon.onclick = () => {
     cart.classList.add("active");
-    console.log('cartIcon is pressed')
+
 };
 //Close cart
 closeCart.onclick = () => {
     cart.classList.remove('active');
 }
 
-//adding items to cart
+//Adding items to cart
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready);
 } else {
     ready();
 }
 
-//function for removing items from cart
+//Function for removing items from cart
 function ready() {
     var removeCartButton = document.getElementsByClassName('cart-remove');
     for (var i = 0; i < removeCartButton.length; i++) {

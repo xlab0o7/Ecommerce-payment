@@ -15,7 +15,7 @@
 :root {
     --main-color: red;
     --text-color: rgba(255, 255, 5, 0.51);
-    --bg-color: white;
+    --bg-color: rgb(138, 115, 115);
     --container-color: rgba(0, 6, 4, 0.644);
 }
 
@@ -34,7 +34,7 @@ header {
     left: 0%;
     width: 100%;
     background: var(--container-color);
-    box-shadow: 0 1px 4px hsl(0, 0%, 98%, 0.1);
+    box-shadow: 0 1px 4px hsla(0, 0%, 98%, 0.132);
     z-index: 100;
 }
 
@@ -50,6 +50,15 @@ header {
     margin: auto;
     width: 100%;
 }
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+
+}
+
 
 .logo {
     font-size: 1.1rem;
@@ -263,6 +272,7 @@ section {
 
 .price {
     font-weight: 500;
+    color: var(--text-color);
 }
 
 .add-cart {
